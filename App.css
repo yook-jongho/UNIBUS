@@ -1,0 +1,17 @@
+@font-face {
+    font-family: "Pretendard-Regular";
+    src: url("/fonts/Pretendard-Regular.ttf");
+    font-weight: normal;
+}
+
+body {
+    font-family: "Pretendard-Regular";
+}
+
+h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
