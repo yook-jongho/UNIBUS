@@ -20,16 +20,24 @@
             </div>
             <div class="select">
                 <label>
-                    <input type="radio" name="select" value="driver" />
+                    <input type="radio" name="select" value="driver" required />
                     <span id="driver">버스기사</span>
                 </label>
                 <label>
-                    <input type="radio" name="select" value="passenger" />
+                    <input
+                        type="radio"
+                        name="select"
+                        value="passenger"
+                        required
+                    />
                     <span id="passenger">버스 탑승객</span>
                 </label>
             </div>
             <footer>
-                <button id="next" type="button">다음(버튼)</button>
+                <div id="step">
+                    <button id="next" type="button">다음(버튼)</button>
+                    <!-- <button id="prev" type="button">이전(버튼)</button> -->
+                </div>
                 <img class="logo" src="../img/로고.png" />
             </footer>
         </div>
