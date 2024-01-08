@@ -13,13 +13,10 @@ document.getElementById("next").addEventListener("click", function () {
     // 라디오 버튼이 선택되지 않았을 경우 경고 표시
     if (isChecked === null) {
         alert("라디오 버튼을 선택해주세요.");
-    } else if (isChecked === "passenger") {
-        const move = "../client/client.html";
+    } else {
+        var queryString = "?selectedValue=" + encodeURIComponent(isChecked);
+        const move = "../depart/depart.html" + queryString;
         window.location.href = move;
-    } else if (isChecked === "driver") {
-        const move = "../driver/driver.html";
-        window.location.href = move;
-        // console.log("기사 페이지롱");
     }
 });
 
