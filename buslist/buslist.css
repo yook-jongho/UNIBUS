@@ -1,0 +1,164 @@
+@font-face {
+    font-family: "Pretendard-Bold";
+    src: url("../fonts/Pretendard-Bold.woff2");
+
+    font-family: "Pretendard";
+    src: url("../fonts//Pretendard-Regular.ttf");
+}
+
+body {
+    margin: 0 auto; /* 화면 중앙에 위치하도록 설정 */
+    background-color: #f7f8fa; /* 배경색 추가 */
+    font-family: "Pretendard-Bold";
+    font-weight: 500;
+}
+.screen {
+    width: 430px;
+    height: 510px;
+    margin: 0 auto;
+}
+
+header {
+    height: 10%;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    font-size: 20px;
+    text-align: center;
+    background-color: #fff;
+}
+
+.headline {
+    margin: 0 auto;
+}
+
+.sub_header {
+    height: 15%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    text-align: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.highlight {
+    color: #0496ff;
+}
+.name {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.busStopItem {
+    margin: 15px auto;
+    padding: 10px;
+    width: 90%;
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: 0px 2.86px 7.15px 0px rgba(38, 51, 77, 0.03);
+}
+
+.fastest {
+    margin: 10px 10px 20px 10px;
+    padding-bottom: 10px;
+    color: #5f6e8b;
+    font-size: 18px;
+    border-bottom: 3px solid var(--Gray-Blue-Grey-Blue-97, #f5f6f7);
+}
+
+.info {
+    margin: 10px;
+}
+
+.bus_type {
+    padding: 8px;
+    color: #0496ff;
+    background-color: #d3ecff;
+    border-radius: 15px;
+}
+
+.bus_name {
+    font-size: 40px;
+    font-weight: bold;
+    color: #3d475a;
+}
+
+button {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    font-size: 17px;
+    font-weight: bold;
+    color: #fff;
+    background: #33bfff;
+}
+
+/* 모달 스타일링 */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    width: 80%;
+    background-color: #fefefe;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+}
+
+.modal_info,
+.modal_bot {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.modal-content .sub_header {
+    padding-bottom: 20px;
+    border-bottom: 3px solid var(--Gray-Blue-Grey-Blue-97, #f5f6f7);
+}
+
+.modal_bot button {
+    margin-top: 10px;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+footer {
+    width: 100%;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.logo {
+    width: 40%;
+    margin-top: 20px;
+}
