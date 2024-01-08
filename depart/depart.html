@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="depart.css" />
+        <title>UNIBUS</title>
+    </head>
+    <body>
+        <div class="screen">
+            <header>
+                <div id="prev">
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="9"
+                        height="16"
+                        viewBox="0 0 9 16"
+                        fill="none"
+                    >
+                        <path
+                            d="M7.47793 1.27026L0.87793 7.87026L7.47793 14.4703"
+                            stroke="#1C273D"
+                            stroke-width="1.65"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                        />
+                    </svg>
+                </div>
+                <span class="headline">버스 예약하기</span>
+            </header>
+            <div class="search">
+                <p><span style="color: #1bb5fb">출발</span> 정류장명 입력</p>
+                <input
+                    type="text"
+                    placeholder="출발 정류장명을 입력해 주세요"
+                    required
+                />
+            </div>
+            <div class="listBox">
+                <div id="choice" class="list">
+                    <div class="numberBox">1</div>
+                    <span>잠원성당 버튼</span>
+                    <div class="busId">22206</div>
+                </div>
+                <div class="list">
+                    <div class="numberBox">1</div>
+                    <span>잠원성당 버튼</span>
+                    <div class="busId">22206</div>
+                </div>
+            </div>
+            <footer>
+                <img class="logo" src="../img/로고.png" />
+            </footer>
+        </div>
+        <script src="depart.js"></script>
+    </body>
+</html>
