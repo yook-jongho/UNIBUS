@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="select.css" />
+        <title>UNIBUS</title>
+    </head>
+    <body>
+        <div class="screen">
+            <div class="wrapper">
+                <img src="../img/bus.png" />
+                <div class="content">
+                    <img id="number" src="../img/말풍선 1.png" alt="순서 1번" />
+                    <p>
+                        <span id="highlight">이용자 유형</span>을 <br />선택해
+                        주세요
+                    </p>
+                </div>
+            </div>
+            <div class="select">
+                <label>
+                    <input type="radio" name="select" value="driver" />
+                    <span id="driver">버스기사</span>
+                </label>
+                <label>
+                    <input type="radio" name="select" value="passenger" />
+                    <span id="passenger">버스 탑승객</span>
+                </label>
+            </div>
+            <footer>
+                <button id="next" type="button">다음(버튼)</button>
+                <img class="logo" src="../img/로고.png" />
+            </footer>
+        </div>
+        <script src="select.js"></script>
+    </body>
+</html>
