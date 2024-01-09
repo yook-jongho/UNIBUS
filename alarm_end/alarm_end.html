@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="alarm_end.css" />
+        <title>UNIBUS</title>
+    </head>
+    <body>
+        <div class="screen">
+            <header>
+                <div id="prev">
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="9"
+                        height="16"
+                        viewBox="0 0 9 16"
+                        fill="none"
+                    >
+                        <path
+                            d="M7.47793 1.27026L0.87793 7.87026L7.47793 14.4703"
+                            stroke="#1C273D"
+                            stroke-width="1.65"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                        />
+                    </svg>
+                </div>
+                <span class="headline">내 차량 정보</span>
+            </header>
+            <div class="wrapper">
+                <div class="content">
+                    <span style="color: #006998; font-size: 30px"
+                        >운행이 종료되었습니다</span
+                    >
+                    <img src="../img/화살표파란색.jpg" class="main_img" />
+                    <div class="content">
+                        <span class="bus_id" style="font-weight: bold"></span>
+                        <span class="bus_name" style="margin-top: 10px"></span>
+                    </div>
+                    <div class="travel">
+                        <span class="depart"> </span>
+                        <img
+                            src="../img/화살표 (하늘색).png"
+                            style="width: 20%"
+                        />
+                        <span class="end"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="alarm_end.js"></script>
+    </body>
+</html>

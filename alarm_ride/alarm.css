@@ -1,0 +1,88 @@
+@font-face {
+    font-family: "Pretendard-Bold";
+    src: url("../fonts/Pretendard-Bold.woff2");
+
+    font-family: "Pretendard";
+    src: url("../fonts//Pretendard-Regular.ttf");
+}
+
+body {
+    margin: 0 auto; /* 화면 중앙에 위치하도록 설정 */
+    background-color: #def5ff; /* 배경색 추가 */
+    font-family: "Pretendard-Bold";
+    font-weight: 500;
+}
+.screen {
+    width: 430px;
+    height: 510px;
+    margin: 0 auto;
+}
+
+.wrapper {
+    width: 80%;
+    padding: 20px;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fefefe;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+}
+
+.travel {
+    height: 15%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    text-align: center;
+    align-items: center;
+    padding: 10px;
+    padding-bottom: 20px;
+    border-bottom: 3px solid var(--Gray-Blue-Grey-Blue-97, #f5f6f7);
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    margin: 20px;
+}
+
+.bus_type {
+    padding: 8px;
+    color: #0496ff;
+    background-color: #d3ecff;
+    border-radius: 15px;
+}
+
+.bus_name {
+    font-size: 40px;
+    font-weight: bold;
+    color: #3d475a;
+}
+
+img {
+    width: 70%;
+}
+
+.highlight {
+    color: #0496ff;
+}
+.name {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+footer {
+    width: 100%;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.logo {
+    width: 40%;
+    margin-top: 20px;
+}
