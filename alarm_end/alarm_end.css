@@ -1,6 +1,6 @@
 @font-face {
     font-family: "Pretendard-Bold";
-    src: url("../fonts/Pretendard-Bold.woff2");
+    src: url("../fonts/Pretendard-Bold.ttf");
 
     font-family: "Pretendard";
     src: url("../fonts//Pretendard-Regular.ttf");
@@ -9,8 +9,7 @@
 body {
     margin: 0 auto; /* 화면 중앙에 위치하도록 설정 */
     background-color: #e8f7ff; /* 배경색 추가 */
-    font-family: "Pretendard-Bold";
-    font-weight: 500;
+    font-family: "Pretendard";
 }
 .screen {
     /* width: 430px; */
@@ -73,7 +72,7 @@ header {
 
 .bus_name {
     font-size: 40px;
-    font-weight: bold;
+    font-family: "Pretendart-Bold";
     color: #0075c9;
 }
 
@@ -88,13 +87,12 @@ img {
 
 .highlight {
     color: #ff9a49;
-    font-weight: 600;
 }
 
 .depart,
 .end {
     font-size: 25px;
-    font-weight: bold;
+    font-weight: "Pretendard-Bold";
 }
 
 footer {

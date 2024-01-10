@@ -1,8 +1,17 @@
-function getData(apiUrl) {
-    // API 엔드포인트 설정
-    // const apiUrl = "https://jsonplaceholder.typicode.com/posts/1";
+function checkEnter(event) {
+    if (event.keyCode === 13) {
+        getData();
+    }
+}
 
-    // fetch 함수를 사용하여 GET 요청 보내기
+function getData() {
+    // 사용자 입력값 가져오기
+    const inputElement = document.getElementById("departStation");
+    const inputValue = inputElement.value;
+
+    // API 엔드포인트 및 검색어 설정
+    const apiUrl = `http://192.168.150.171:8080/passenger/station?searchWord=${inputValue}`;
+
     fetch(apiUrl)
         .then((response) => {
             // 응답이 성공적으로 받아졌는지 확인
@@ -14,21 +23,61 @@ function getData(apiUrl) {
         })
         .then((data) => {
             // 받은 데이터를 처리하고 화면에 표시
-            displayData(data);
+            console.log(data);
+            const listBox = document.getElementById("listBox");
+            listBox.innerHTML = "";
+
+            // 서버에서 받아온 데이터를 기반으로 동적으로 목록 생성
+            data.data.forEach((stop, index) => {
+                const listElement = createListElement(stop, index);
+                listBox.appendChild(listElement);
+            });
         })
         .catch((error) => {
             // 오류 발생 시 처리
             console.error("Fetch error:", error);
+
+            const listBoxElement = document.getElementById("listBox");
+            document.createElement("span").innerHTML =
+                "현재 이용 가능한 버스가 없습니다.";
         });
 }
 
-const test = getData();
+// 서버에서 받아온 데이터를 기반으로 동적으로 목록을 생성하는 함수
+function createListElement(data, index) {
+    const listElement = document.createElement("div");
+    listElement.classList.add("list");
 
-document.getElementById("choice").addEventListener("click", function () {
-    const move = "../arrival/arrival.html";
-    console.log("asfd");
-    window.location.href = move;
-});
+    const numberBox = document.createElement("div");
+    numberBox.classList.add("numberBox");
+    numberBox.textContent = index + 1;
+    listElement.appendChild(numberBox);
+
+    const spanElement = document.createElement("span");
+    spanElement.textContent = data.stationName;
+    listElement.appendChild(spanElement);
+
+    const busIdElement = document.createElement("div");
+    busIdElement.classList.add("busId");
+    busIdElement.textContent = data.stationNum;
+    listElement.appendChild(busIdElement);
+
+    listElement.addEventListener("click", function () {
+        // 클릭한 정류소의 stationId 가져오기
+        const clickedStationId = data.stationNum;
+        const clickedStationName = data.stationName;
+
+        // 클릭한 정류소의 stationId를 쿠키에 저장하고 30분 후에 만료되도록 설정
+        const expirationTime = new Date(Date.now() + 30 * 60 * 1000);
+        document.cookie = `departStationId=${clickedStationId}; expires=${expirationTime.toUTCString()}; path=/;`;
+        document.cookie = `departStationName=${clickedStationName}; expires=${expirationTime.toUTCString()}; path=/;`;
+
+        const move = "../arrival/arrival.html";
+        window.location.href = move;
+    });
+
+    return listElement;
+}
 
 document.getElementById("prev").addEventListener("click", function () {
     const move = "../client/client.html";

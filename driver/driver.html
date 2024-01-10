@@ -3,9 +3,32 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Document</title>
+        <link rel="stylesheet" href="driver.css" />
+        <title>UNIBUS</title>
     </head>
     <body>
-        <h1>hi</h1>
+        <div class="screen">
+            <header>
+                <span>교통약자를 위한 서비스</span>
+                <h1 class="service">UNIBUS</h1>
+            </header>
+            <div class="inputContainer">
+                <span>버스번호</span>
+                <input
+                    type="number"
+                    placeholder="버스번호를 입력해 주세요"
+                    required
+                />
+
+                <span>고유번호</span>
+                <input
+                    type="number"
+                    placeholder="고유번호를 입력해 주세요"
+                    required
+                />
+                <button id="submit">확인</button>
+            </div>
+        </div>
+        <script src="driver.js"></script>
     </body>
 </html>

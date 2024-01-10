@@ -14,8 +14,8 @@ document.getElementById("next").addEventListener("click", function () {
     if (isChecked === null) {
         alert("라디오 버튼을 선택해주세요.");
     } else {
-        var queryString = "?selectedValue=" + encodeURIComponent(isChecked);
-        const move = "../depart/depart.html" + queryString;
+        // var queryString = "?selectedValue=" + encodeURIComponent(isChecked);
+        const move = "../depart/depart.html";
         window.location.href = move;
     }
 });

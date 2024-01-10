@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="reservation.css" />
+        <title>UNIBUS</title>
+    </head>
+    <body>
+        <div class="screen">
+            <header>
+                <div id="prev">
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="9"
+                        height="16"
+                        viewBox="0 0 9 16"
+                        fill="none"
+                    >
+                        <path
+                            d="M7.47793 1.27026L0.87793 7.87026L7.47793 14.4703"
+                            stroke="#1C273D"
+                            stroke-width="1.65"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                        />
+                    </svg>
+                </div>
+                <span class="headline">버스 예약하기</span>
+            </header>
+
+            <div id="sub_header"></div>
+
+            <div class="current_status">
+                <div class="fastest">
+                    <span>다음 정류장 승차예약 현황</span>
+                </div>
+                <div class="info">
+                    <div class="container" id="sight">
+                        <!-- <span class="highlight">시각장애</span>
+                        <div class="status">
+                            <img
+                                src="../img/(아이콘 - 눈).png"
+                                style="width: 40%; vertical-align: middle"
+                            />
+                            <span class="num">0</span>
+                        </div> -->
+                    </div>
+                    <div class="container" id="body">
+                        <!-- <span class="highlight">지체장애</span>
+                        <div class="status">
+                            <img
+                                src="../img/(아이콘 - 휠체어 ).png"
+                                style="width: 40%"
+                            />
+                            <span class="num">0</span>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+
+            <div class="current_status">
+                <div class="fastest">
+                    <span>다음 정류장 하차예약 현황</span>
+                </div>
+                <div class="getoff">
+                    <div class="container" id="total">
+                        <!-- <span class="highlight">시각장애</span>
+                        <div class="status">
+                            <img
+                                src="../img/(아이콘 - 눈).png"
+                                style="width: 40%; vertical-align: middle"
+                            />
+                            <span class="num">0</span>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+
+            <div style="text-align: center">
+                <button id="driveStop">운행 종료</button>
+            </div>
+
+            <!-- modal.html -->
+            <div id="myModal" class="modal">
+                <div class="modal-content">
+                    <span class="close" id="closeModal">&times;</span>
+                    <p style="text-align: center">운행을 종료하시겠습니까?</p>
+                    <button id="confirmClose">확인</button>
+                </div>
+            </div>
+
+            <footer>
+                <img class="logo" src="../img/로고.png" />
+            </footer>
+        </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/stomp.js/2.3.3/stomp.js"></script>
+        <script src="reservation.js"></script>
+    </body>
+</html>

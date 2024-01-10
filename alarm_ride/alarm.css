@@ -1,6 +1,6 @@
 @font-face {
     font-family: "Pretendard-Bold";
-    src: url("../fonts/Pretendard-Bold.woff2");
+    src: url("../fonts/Pretendard-Bold.ttf");
 
     font-family: "Pretendard";
     src: url("../fonts//Pretendard-Regular.ttf");
@@ -60,7 +60,7 @@ body {
 
 .bus_name {
     font-size: 40px;
-    font-weight: bold;
+    font-weight: "Pretendard-Bold";
     color: #3d475a;
 }
 
@@ -73,7 +73,7 @@ img {
 }
 .name {
     font-size: 25px;
-    font-weight: bold;
+    font-weight: "Pretendard-Bold";
 }
 
 footer {

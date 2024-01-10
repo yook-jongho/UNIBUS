@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="alarm_end.css" />
+        <link rel="stylesheet" href="businfo.css" />
         <title>UNIBUS</title>
     </head>
     <body>
@@ -30,12 +30,12 @@
             </header>
             <div class="wrapper">
                 <div class="content">
-                    <span style="color: #006998; font-size: 30px"
-                        >운행이 종료되었습니다</span
+                    <span style="color: #303639; font-size: 30px"
+                        >내 차량 정보</span
                     >
-                    <img src="../img/화살표파란색.jpg" class="main_img" />
+                    <img src="../img/bus.png" class="main_img" />
                     <div class="content">
-                        <span class="bus_id"></span>
+                        <span class="bus_id">고유번호 107012076</span>
                         <span class="bus_name" style="margin-top: 10px"></span>
                     </div>
                     <div class="travel">
@@ -47,8 +47,9 @@
                         <span class="end"></span>
                     </div>
                 </div>
+                <button id="driveStart">운행 시작</button>
             </div>
         </div>
-        <script src="alarm_end.js"></script>
+        <script src="businfo.js"></script>
     </body>
 </html>

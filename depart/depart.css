@@ -1,6 +1,6 @@
 @font-face {
     font-family: "Pretendard-Bold";
-    src: url("../fonts/Pretendard-Bold.woff2");
+    src: url("../fonts/Pretendard-Bold.ttf");
 
     font-family: "Pretendard";
     src: url("../fonts//Pretendard-Regular.ttf");
@@ -60,13 +60,12 @@ footer {
     padding-bottom: 30px;
 }
 
-.listBox {
+#listBox {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 0 auto;
     width: 100%;
-    height: 100%;
 }
 
 .list {
@@ -80,7 +79,7 @@ footer {
     border: none;
     border-radius: 10px;
     background-color: #1bb5fb;
-    font-size: 20px;
+    /* font-size: 20px; */
     color: #fff;
     cursor: pointer;
 }
@@ -93,10 +92,13 @@ footer {
 .numberBox {
     width: 8%;
     height: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border-radius: 10px;
     background-color: #58cbff;
     font-size: 30px;
-    font-weight: bold;
+    font-weight: "Pretendard-Bold";
     text-align: center;
     margin-left: 5px;
     padding: 5px;
