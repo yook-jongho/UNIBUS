@@ -1,4 +1,4 @@
-function getData(apiUrl) {
+export default function getData(apiUrl) {
     // API 엔드포인트 설정
     // const apiUrl = "https://jsonplaceholder.typicode.com/posts/1";
 
@@ -21,16 +21,3 @@ function getData(apiUrl) {
             console.error("Fetch error:", error);
         });
 }
-
-const test = getData();
-
-document.getElementById("choice").addEventListener("click", function () {
-    const move = "../arrival/arrival.html";
-    console.log("asfd");
-    window.location.href = move;
-});
-
-document.getElementById("prev").addEventListener("click", function () {
-    const move = "../client/client.html";
-    window.location.href = move;
-});

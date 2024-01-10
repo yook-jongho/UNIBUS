@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="arrival.css" />
+        <link rel="stylesheet" href="buslist.css" />
         <title>UNIBUS</title>
     </head>
     <body>
@@ -28,30 +28,31 @@
                 </div>
                 <span class="headline">버스 예약하기</span>
             </header>
-            <div class="search">
-                <p><span style="color: #1bb5fb">도착</span> 정류장명 입력</p>
-                <input
-                    type="text"
-                    placeholder="출발 정류장명을 입력해 주세요"
-                    required
-                />
-            </div>
-            <div class="listBox">
-                <div id="choice" class="list">
-                    <div class="numberBox">1</div>
-                    <span>잠원성당 버튼</span>
-                    <div class="busId">22206</div>
+
+            <div class="sub_header">
+                <div class="depart">
+                    <span class="highlight">출발</span> 22206 <br />
+                    <span class="name">잠원성당</span>
                 </div>
-                <div class="list">
-                    <div class="numberBox">1</div>
-                    <span>잠원성당 버튼</span>
-                    <div class="busId">22206</div>
+                <img src="../img/화살표 (하늘색).png" />
+                <div>
+                    <span class="highlight">도착</span> 23551 <br />
+                    <span class="name">경기여고</span>
                 </div>
             </div>
+
+            <div id="busStopsList"></div>
+
+            <div id="myModal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                </div>
+            </div>
+
             <footer>
                 <img class="logo" src="../img/로고.png" />
             </footer>
         </div>
-        <script src="arrival.js"></script>
+        <script src="buslist.js"></script>
     </body>
 </html>
