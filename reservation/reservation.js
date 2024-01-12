@@ -12,11 +12,10 @@ function pageLoad(busData) {
 
     const ridePhys = document.getElementById("body");
     ridePhys.innerHTML = `
-    <span class="highlight">지체장애</span>
+    <span class="highlight">시각장애</span>
     <div class="status">
-    <img
-    src="../img/(아이콘 - 휠체어 ).png"
-    style="width: 40%"
+    <img src="../img/(아이콘 - 눈).png"
+    style="width: 40%; vertical-align: middle"
     />
     <span class="num">${busData.physicalDisabilityNum || 0}</span>
     </div>
@@ -51,7 +50,7 @@ function pageLoad(busData) {
 }
 
 function stomp() {
-    const socket = new WebSocket("ws://192.168.150.171:8080/ws"); // Replace with your WebSocket endpoint
+    const socket = new WebSocket("ws://192.168.151.144:8080/ws"); // Replace with your WebSocket endpoint
 
     const stompClient = Stomp.over(socket);
 

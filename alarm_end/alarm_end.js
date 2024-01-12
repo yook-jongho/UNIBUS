@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const urlParams = new URLSearchParams(window.location.search);
 
     // 쿼리 파라미터에서 값 가져오기 (기본값은 빈 문자열)
-    const busUniqueId = urlParams.get("busId") || "고유번호 12345";
+    const busUniqueId = urlParams.get("busId") || "고유번호 107012076";
     const busNumber = urlParams.get("busNumber") || "143번";
     const busStart = urlParams.get("depart") || "정릉";
     const busEnd = urlParams.get("end") || "개포동";

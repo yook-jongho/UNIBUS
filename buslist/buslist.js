@@ -48,7 +48,7 @@ const arrivalName = getCookieValue("arrivalStationName");
 const busId = getCookieValue("busId");
 
 function getData() {
-    fetch("http://192.168.150.171:8080/passenger/buslist", {
+    fetch("http://192.168.151.144:8080/passenger/buslist", {
         method: "POST",
         headers: {
             "Content-Type": "application/json",
@@ -92,7 +92,7 @@ function getData() {
 }
 
 function postData(busId, depart, desti) {
-    fetch("http://192.168.150.171:8080/passenger/reservation", {
+    fetch("http://192.168.151.144:8080/passenger/reservation", {
         method: "POST",
         headers: {
             "Content-Type": "application/json",

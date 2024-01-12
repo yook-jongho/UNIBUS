@@ -1,5 +1,5 @@
 function stomp() {
-    const socket = new WebSocket("ws://192.168.150.171:8080/ws"); // Replace with your WebSocket endpoint
+    const socket = new WebSocket("ws://192.168.151.144:8080/ws"); // Replace with your WebSocket endpoint
 
     const stompClient = Stomp.over(socket);
 

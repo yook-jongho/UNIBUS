@@ -10,7 +10,7 @@ function getData() {
     const inputValue = inputElement.value;
 
     // API 엔드포인트 및 검색어 설정
-    const apiUrl = `http://192.168.150.171:8080/passenger/station?searchWord=${inputValue}`;
+    const apiUrl = `http://192.168.151.144:8080/passenger/station?searchWord=${inputValue}`;
 
     fetch(apiUrl)
         .then((response) => {
