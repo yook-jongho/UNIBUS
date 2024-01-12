@@ -1,13 +1,11 @@
-import { WS_URL } from "./constants.js";
-
 document.addEventListener("DOMContentLoaded", function () {
-    const socket = new WebSocket(WS_URL); // Replace with your WebSocket endpoint
+    const socket = new WebSocket("ws://172.30.1.49:8080/ws"); // Replace with your WebSocket endpoint
 
     const stompClient = Stomp.over(socket);
 
     stompClient.connect({}, function (frame) {
         console.log("Connected: " + frame);
-        stompClient.subscribe("/topic/messages", function (message) {
+        stompClient.subscribe("/sub/107012076", function (message) {
             displayMessage(JSON.parse(message.body));
         });
     });

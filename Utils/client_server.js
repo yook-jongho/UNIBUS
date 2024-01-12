@@ -1,4 +1,4 @@
-export default function getData(apiUrl) {
+function getData(apiUrl) {
     // API 엔드포인트 설정
     // const apiUrl = "https://jsonplaceholder.typicode.com/posts/1";
 

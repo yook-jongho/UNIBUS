@@ -31,23 +31,14 @@
             <div class="search">
                 <p><span style="color: #1bb5fb">도착</span> 정류장명 입력</p>
                 <input
+                    id="arrivalStation"
                     type="text"
-                    placeholder="출발 정류장명을 입력해 주세요"
+                    placeholder="도착 정류장명을 입력해 주세요"
+                    onkeydown="checkEnter(event)"
                     required
                 />
             </div>
-            <div class="listBox">
-                <div id="choice" class="list">
-                    <div class="numberBox">1</div>
-                    <span>잠원성당 버튼</span>
-                    <div class="busId">22206</div>
-                </div>
-                <div class="list">
-                    <div class="numberBox">1</div>
-                    <span>잠원성당 버튼</span>
-                    <div class="busId">22206</div>
-                </div>
-            </div>
+            <div id="listBox"></div>
             <footer>
                 <img class="logo" src="../img/로고.png" />
             </footer>

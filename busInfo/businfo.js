@@ -19,3 +19,21 @@ document.addEventListener("DOMContentLoaded", function () {
     busDepartElement.textContent = busStart;
     busEndElement.textContent = busEnd;
 });
+
+document.getElementById("driveStart").addEventListener("click", function () {
+    console.log("asdf");
+    fetch("http://192.168.151.144:8080/driver/start", {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+            busNum: "143",
+            busId: "107012076",
+        }),
+    }).then((response) => {
+        console.log(response);
+        const move = "../reservation/reservation.html";
+        window.location.href = move;
+    });
+});

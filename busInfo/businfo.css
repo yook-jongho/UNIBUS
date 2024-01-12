@@ -8,7 +8,7 @@
 
 body {
     margin: 0 auto; /* 화면 중앙에 위치하도록 설정 */
-    background-color: #ffeddf; /* 배경색 추가 */
+    background-color: #f7f8fa; /* 배경색 추가 */
     font-family: "Pretendard-Bold";
     font-weight: 500;
 }
@@ -18,16 +18,25 @@ body {
     margin: 0 auto;
 }
 
+header {
+    height: 10%;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    font-size: 20px;
+    text-align: center;
+    background-color: #fff;
+}
+
+.headline {
+    margin: 0 auto;
+}
+
 .wrapper {
-    width: 80%;
-    padding: 20px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: #fefefe;
-    border: 1px solid rgba(255, 255, 255, 0.5);
-    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
 }
 
 .travel {
@@ -38,8 +47,6 @@ body {
     text-align: center;
     align-items: center;
     padding: 10px;
-    padding-bottom: 20px;
-    border-bottom: 3px solid var(--Gray-Blue-Grey-Blue-97, #f5f6f7);
 }
 
 .content {
@@ -48,34 +55,59 @@ body {
     align-items: center;
     text-align: center;
     flex-direction: column;
-    margin: 20px;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 30px;
+    padding: 10px;
+    background-color: #fefefe;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
 }
 
-.bus_type {
+.bus_id {
+    width: 100%;
     padding: 8px;
-    color: #ba5300;
-    background-color: #ffe6d2;
+    background-color: #c3e6ff;
+    color: #0075c9;
     border-radius: 15px;
 }
 
 .bus_name {
     font-size: 40px;
-    font-weight: "";
-    color: #ff814b;
+    font-weight: "Pretendard-Bold";
+    color: #0075c9;
 }
 
 img {
     width: 70%;
 }
 
+.main_img {
+    padding-bottom: 20px;
+    border-bottom: 3px solid var(--Gray-Blue-Grey-Blue-97, #f5f6f7);
+}
+
 .highlight {
     color: #ff9a49;
     font-weight: 600;
 }
-.name {
+
+.depart,
+.end {
     font-size: 25px;
     font-weight: "Pretendard-Bold";
-    color: #723f16;
+}
+
+button {
+    width: 80%;
+    margin-top: 30px;
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    font-size: 17px;
+    font-weight: "Pretendard-Bold";
+    color: #fff;
+    background: #33bfff;
 }
 
 footer {
