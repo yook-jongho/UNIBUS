@@ -5,8 +5,9 @@
 ### **UNIBUS**
 
 **버스 탑승에 어려움을 겪는 시각 장애인들을 위한 실시간 탑승 예약 및 알림 서비스**
+![a](https://github.com/softeerbootcamp-3rd/softee5-highfiveteam-FE/assets/39684697/5cdbcd7f-d02b-4208-bc57-624f57a7c25c)
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/c72add5d-bccf-4f0d-bc6b-ea12b79a52c4/c8cbea53-98f2-44fc-9b96-e10b2235fa66/Untitled.png)
+
 
 ### 해결하고 싶은 문제(배경)
 
@@ -29,12 +30,14 @@
 ### 프로젝트 플로우
 
 -   case1: 버스기사
+![b](https://github.com/softeerbootcamp-3rd/softee5-highfiveteam-FE/assets/39684697/fcd7b0d5-9b29-4614-8e8a-99a9b35cad51)
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/c72add5d-bccf-4f0d-bc6b-ea12b79a52c4/a61b8c3f-8e6d-4ab6-b908-f2ac06b3184e/Untitled.png)
+
 
 -   case2: 버스승객
+![스크린샷 2024-01-20 오후 9 58 54](https://github.com/softeerbootcamp-3rd/softee5-highfiveteam-FE/assets/39684697/0a7ad5e4-c08b-4b32-adf2-e4a0c13c48d8)
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/c72add5d-bccf-4f0d-bc6b-ea12b79a52c4/b95c9183-356f-45cd-bc14-6f6e6a2f5274/Untitled.png)
+
 
 # 그라운드 룰
 
