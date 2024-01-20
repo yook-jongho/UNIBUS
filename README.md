@@ -6,8 +6,7 @@
 
 **버스 탑승에 어려움을 겪는 시각 장애인들을 위한 실시간 탑승 예약 및 알림 서비스**
 
-![Untitled]
-(https://www.notion.so/5-UNIBUS-210aefaa5b81454f9090425b1d27b5b6?pvs=4#629c871ab3704c8eb126d581e1eba188)
+![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/c72add5d-bccf-4f0d-bc6b-ea12b79a52c4/c8cbea53-98f2-44fc-9b96-e10b2235fa66/Untitled.png)
 
 ### 해결하고 싶은 문제(배경)
 
@@ -31,13 +30,11 @@
 
 -   case1: 버스기사
 
-![Untitled]
-(https://www.notion.so/5-UNIBUS-210aefaa5b81454f9090425b1d27b5b6?pvs=4#ecf7462057f84a6c9adebb49b295859d)
+![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/c72add5d-bccf-4f0d-bc6b-ea12b79a52c4/a61b8c3f-8e6d-4ab6-b908-f2ac06b3184e/Untitled.png)
 
 -   case2: 버스승객
 
-![Untitled]
-(https://www.notion.so/5-UNIBUS-210aefaa5b81454f9090425b1d27b5b6?pvs=4#801f0fa2f7b648f185002e0dbe7c97de)
+![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/c72add5d-bccf-4f0d-bc6b-ea12b79a52c4/b95c9183-356f-45cd-bc14-6f6e6a2f5274/Untitled.png)
 
 # 그라운드 룰
 
