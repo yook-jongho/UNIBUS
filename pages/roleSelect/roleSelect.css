@@ -1,0 +1,60 @@
+@font-face {
+    font-family: "Pretendard-Bold";
+    src: url("../../fonts/Pretendard-Bold.ttf");
+}
+
+body {
+    margin: 0 auto; /* 화면 중앙에 위치하도록 설정 */
+    background-color: #f0f0f0; /* 배경색 추가 */
+    font-family: "Pretendard-Bold";
+}
+
+.stepContainer {
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+
+    background-color: white;
+    box-shadow: 0px 2.86px 100px rgba(38, 51, 77, 0.05);
+    border-radius: 22px;
+    font-size: 24px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* 수평, 수직 가운데 정렬을 위한 추가 */
+    text-align: center;
+}
+
+.busImg {
+    width: 90%;
+    margin-top: 30px;
+}
+
+.step {
+    width: 20%;
+}
+
+.selectBox {
+    margin: 30px;
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+}
+
+input {
+    width: 30px;
+    height: 30px;
+    vertical-align: -5.8px;
+    margin-right: 10px;
+}
+label {
+    margin-bottom: 10px;
+    font-size: 24px;
+    /* line-height: 2rem; */
+}
