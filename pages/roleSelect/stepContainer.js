@@ -4,7 +4,7 @@ export const stepContainer = ({ one, two }) => {
         <img class="busImg" src="../../img/bus.png"/>
         <div class="content">
             <img class="step" src="../../img/stepOne.png"/>
-            <span> 이용자 유형을 <br/> 선택해 주세요 <span>
+            <p><span style="color: #13A6E8"> 이용자 유형</span>을 <br/> 선택해 주세요 <p>
         </div>
     </div>
     <div class="selectBox">
