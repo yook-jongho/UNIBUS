@@ -7,15 +7,23 @@ body {
     margin: 0 auto; /* 화면 중앙에 위치하도록 설정 */
     background-color: #f0f0f0; /* 배경색 추가 */
     font-family: "Pretendard-Bold";
+    color: #3d4658;
+}
+
+.app {
+    display: flex;
+    flex-direction: column;
+    gap: var(--Number-100, 20px);
 }
 
 .stepContainer {
-    padding: 50px;
+    padding: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
     justify-content: center;
+    gap: var(--Number-100, 10px);
 
     background-color: white;
     box-shadow: 0px 2.86px 100px rgba(38, 51, 77, 0.05);
@@ -24,15 +32,15 @@ body {
 }
 
 .content {
+    margin: 0px 20px 30px 0px;
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center; /* 수평, 수직 가운데 정렬을 위한 추가 */
     text-align: center;
 }
 
 .busImg {
-    width: 90%;
+    width: 65%;
     margin-top: 30px;
 }
 
@@ -44,6 +52,7 @@ body {
     margin: 30px;
     display: flex;
     flex-direction: column;
+    gap: var(--Number-100, 10px);
     font-size: 20px;
 }
 
@@ -54,7 +63,30 @@ input {
     margin-right: 10px;
 }
 label {
-    margin-bottom: 10px;
     font-size: 24px;
     /* line-height: 2rem; */
+}
+
+footer {
+    position: absolute;
+    bottom: 35px;
+    text-align: center;
+}
+
+footer button {
+    width: 90%;
+    height: 60px;
+    margin: 20px;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    background: #1bb5fb;
+    font-family: "Pretendard-Bold";
+    font-size: 20px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.logo {
+    width: 30%;
 }
