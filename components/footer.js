@@ -1,9 +1,9 @@
 import { button } from "./button.js";
 
-export const footer = (text) => {
+export const footer = (text, url) => {
     return `
     <footer>
-        ${button(text)}
+        ${button(text, url)}
         <img class="logo" src="../../img/logo.png" />
     </footer>
     `;
