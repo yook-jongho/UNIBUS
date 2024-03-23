@@ -19,3 +19,32 @@ export const stepContainer = ({ one, two }) => {
     </div>
     `;
 };
+
+const radioClickHandle = () => {
+    const selected = document.querySelector(
+        "input[type=radio][name=select]:checked"
+    );
+
+    if (selected) {
+        if (selected.value == "driver") {
+            return "../../driver/driver.html";
+        } else if (selected.value == "passenger") {
+            return "../../client/client.html";
+        } else {
+            alert("둘 중 하나 선택해주세요");
+            return "";
+        }
+    }
+};
+
+document.addEventListener("DOMContentLoaded", () => {
+    const driver = document.querySelector(
+        'input[type="radio"][name="select"][value="driver"]'
+    );
+    const passenger = document.querySelector(
+        'input[type="radio"][name="select"][value="passenger"]'
+    );
+
+    driver.addEventListener("click", radioClickHandle);
+    passenger.addEventListener("click", radioClickHandle);
+});
