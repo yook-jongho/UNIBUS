@@ -1,7 +1,11 @@
+import { footer } from "../../components/footer.js";
+import { eventRegister } from "../../core/eventRegister.js";
+import { btnClickHandle, button } from "../../components/button.js";
+
 export const stepContainer = ({ one, two }) => {
     return `
     <div class="stepContainer">
-        <img class="busImg" src="../../img/bus.png"/>
+        <img alt=" class="busImg" src="../../img/bus.png"/>
         <div class="content">
             <img class="step" src="../../img/stepOne.png"/>
             <p><span style="color: #13A6E8"> 이용자 유형</span>을 <br/> 선택해 주세요 <p>
@@ -17,7 +21,13 @@ export const stepContainer = ({ one, two }) => {
             <span id="passenger">${two}</span>
         </label>
     </div>
+    ${footer("다음", movePage)}
     `;
+};
+
+const movePage = () => {
+    const result = radioClickHandle();
+    if (result !== "") window.location.href = result;
 };
 
 const radioClickHandle = () => {
@@ -37,7 +47,7 @@ const radioClickHandle = () => {
     }
 };
 
-document.addEventListener("DOMContentLoaded", () => {
+const radioEvent = () => {
     const driver = document.querySelector(
         'input[type="radio"][name="select"][value="driver"]'
     );
@@ -47,4 +57,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
     driver.addEventListener("click", radioClickHandle);
     passenger.addEventListener("click", radioClickHandle);
-});
+};
+
+const bindEvent = () => {
+    btnClickHandle(test);
+};
+
+eventRegister(bindEvent);
+eventRegister(radioEvent);
