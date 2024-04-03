@@ -1,5 +1,5 @@
 import { stepContainer } from "./stepContainer.js";
-import { footer } from "../../components/footer.js";
+import { addEvent } from "../../core/eventRegister.js";
 
 (() => {
     const app = document.getElementById("app");
@@ -8,5 +8,5 @@ import { footer } from "../../components/footer.js";
         two: "버스 탑승객",
     };
     app.insertAdjacentHTML("afterbegin", stepContainer(text));
-    app.insertAdjacentHTML("afterend", footer("다음"));
+    addEvent();
 })();
