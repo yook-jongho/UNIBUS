@@ -33,7 +33,7 @@
 
 
                      
-<img width="1100" src="https://github.com/softeerbootcamp-3rd/softee5-highfiveteam-BE/assets/80809782/6adf65d3-e374-4f1f-9a22-ccbde38df872"> 
+<img width="1100" src="https://github-production-user-asset-6210df.s3.amazonaws.com/80809782/296116378-6adf65d3-e374-4f1f-9a22-ccbde38df872.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20250305%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250305T021641Z&X-Amz-Expires=300&X-Amz-Signature=9d91dc2620342bc16c8dca1789f2bd236196eb1bf8b3bb63f6a478e5510a43d5&X-Amz-SignedHeaders=host"> 
 
 ---
 ### 사용한 open api
